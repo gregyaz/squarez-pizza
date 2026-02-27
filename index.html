@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SQUAREz Pizza — Detroit-Style Squares</title>
+  <meta name="description" content="SQUAREz Pizza — clean, modern, edgy Detroit-style square pizza. Subscribe for drops, buy merch, and contact us." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="SQUAREz Pizza home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">SQUARE<span class="z">z</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" data-nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-small" href="#subscribe">Subscribe</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Detroit-style squares • Sourdough crunch • Limited drops</p>
+          <h1>Clean. Modern. <span class="accent">Edgy</span> squares.</h1>
+          <p class="lead">
+            SQUAREz Pizza is built for crispy edges, bold toppings, and small-batch drops.
+            Subscribe to get first access.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#subscribe">Join the Drop List</a>
+            <a class="btn btn-ghost" href="contact.html">Contact</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <div class="stat-num">48hr</div>
+              <div class="stat-label">fermentation</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">🔥</div>
+              <div class="stat-label">crispy edges</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">⚡</div>
+              <div class="stat-label">limited drops</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card">
+            <div class="card-top">
+              <div class="badge">Next Drop</div>
+              <div class="tag">Announce Soon</div>
+            </div>
+
+            <div class="card-body">
+              <h2 class="card-title">Signature Square</h2>
+              <p class="card-text">
+                A clean base, loud flavor. Built for that caramelized edge bite.
+              </p>
+
+              <div class="card-actions">
+                <a class="btn btn-small" href="#subscribe">Get Notified</a>
+                <a class="btn btn-small btn-ghost" href="#shop">Shop</a>
+              </div>
+            </div>
+
+            <div class="card-bottom" aria-hidden="true">
+              <div class="grid-noise"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP / BUY -->
+    <section id="shop" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Buy</h2>
+          <p>Start simple: merch + drop announcements. Add online ordering later.</p>
+        </div>
+
+        <div class="cards">
+          <article class="feature">
+            <h3>Merch (Coming Soon)</h3>
+            <p>Tees, hats, stickers. Keep it minimal. Keep it sharp.</p>
+            <a class="link" href="contact.html">Ask about merch →</a>
+          </article>
+
+          <article class="feature">
+            <h3>Drop Orders</h3>
+            <p>Limited batch pizzas announced via email/SMS. First-come, first-served.</p>
+            <a class="link" href="#subscribe">Subscribe for drops →</a>
+          </article>
+
+          <article class="feature">
+            <h3>Catering / Pop-ups</h3>
+            <p>Events, private parties, or local collaborations.</p>
+            <a class="link" href="contact.html">Book a pop-up →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section id="subscribe" class="section section-alt">
+      <div class="container subscribe">
+        <div class="section-head">
+          <h2>Subscribe</h2>
+          <p>Get drop alerts, limited menu releases, and early access.</p>
+        </div>
+
+        <form class="form" id="subscribeForm">
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+
+          <label class="field">
+            <span>Phone (optional)</span>
+            <input type="tel" name="phone" placeholder="(555) 555-5555" />
+          </label>
+
+          <div class="form-row">
+            <button class="btn" type="submit">Join</button>
+            <p class="fineprint">
+              No spam. Only drops + updates. Unsubscribe anytime.
+            </p>
+          </div>
+
+          <p class="form-msg" id="subscribeMsg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="note">
+          <p><strong>Owner tip:</strong> when you’re ready, connect this form to Mailchimp / Klaviyo / ConvertKit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <h2>Questions? Collabs? Press?</h2>
+          <p>Hit the contact page and we’ll get back quick.</p>
+        </div>
+        <a class="btn" href="contact.html">Contact SQUAREz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-line">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">SQUARE<span class="z">z</span></span>
+        </div>
+        <p class="fineprint">© <span id="year"></span> SQUAREz Pizza. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#subscribe">Subscribe</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

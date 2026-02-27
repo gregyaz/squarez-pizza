@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — SQUAREz Pizza</title>
+  <meta name="description" content="Contact SQUAREz Pizza for drops, catering, pop-ups, and collaborations." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="SQUAREz Pizza home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">SQUARE<span class="z">z</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a class="btn btn-small" href="index.html#subscribe">Subscribe</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">
+          Catering, pop-ups, collabs, press, or just talking pizza.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Send a message</h2>
+          <p class="muted">This form is wired as a demo. I’ll show you 2 easy ways to make it actually send emails.</p>
+
+          <form class="form" id="contactForm">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+
+            <label class="field">
+              <span>What’s this about?</span>
+              <select name="topic" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Catering</option>
+                <option>Pop-up / Event</option>
+                <option>Collaboration</option>
+                <option>Press</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Give us the details…" required></textarea>
+            </label>
+
+            <div class="form-row">
+              <button class="btn" type="submit">Send</button>
+              <p class="fineprint">We typically respond within 24–48 hours.</p>
+            </div>
+
+            <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="panel">
+          <div class="panel-inner">
+            <h3>Direct</h3>
+            <p class="muted">Add your real contact info here:</p>
+            <ul class="contact-list">
+              <li><span>Phone:</span> <a href="#">(###) ###-####</a></li>
+              <li><span>Email:</span> <a href="#">hello@squarezpizza.com</a></li>
+              <li><span>Instagram:</span> <a href="#">@squarezpizza</a></li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <h3>Subscribe for drops</h3>
+            <p>Want updates first? Join the list.</p>
+            <a class="btn btn-small" href="index.html#subscribe">Subscribe</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-line">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">SQUARE<span class="z">z</span></span>
+        </div>
+        <p class="fineprint">© <span id="year"></span> SQUAREz Pizza. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#subscribe">Subscribe</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
